@@ -1,0 +1,17 @@
+#navbar{
+
+height:auto;
+min-height:80px;
+
+}
+
+#navbar .navbar-nav{
+
+  position: absolute;
+  right:0;
+
+}
+
+#navbar .navbar-brand, #navbar li{padding: 1.4rem;}
+
+#navbar li a{letter-spacing: 1px;}

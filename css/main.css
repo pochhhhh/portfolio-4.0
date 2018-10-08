@@ -1,0 +1,12 @@
+@import url('navbar.css');
+@import url('home.css');
+@import url('footer.css');
+
+
+body{
+
+margin: 0;
+padding: 0;
+background: #F9F9F9 !important;
+
+}

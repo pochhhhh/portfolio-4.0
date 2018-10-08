@@ -1,0 +1,146 @@
+main{
+
+margin-left:5vw;
+margin-right:5vw;
+
+}
+
+main .header-showcase{
+
+
+height:65vh;
+width: 100%;
+background: #F9F9F9 !important;
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+
+main .header-showcase .caption{
+
+position: relative;
+top:40%;
+
+}
+
+main .header-showcase .section-a h1{
+
+
+
+
+}
+
+main .header-showcase .section-a p{
+
+position: relative;
+top:1.5rem;
+
+}
+
+
+main .projects-showcase{
+
+
+height:auto;
+width:100%;
+background: #F9F9F9 !important;
+
+
+}
+
+main .projects-showcase .container{
+
+
+height:100%;
+width:100%;
+background: #F9F9F9 !important;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap:2rem;
+
+
+}
+
+main .projects-showcase .project-item{
+
+
+background-image: url('https://images.pexels.com/photos/1464856/pexels-photo-1464856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350');
+background-size: 100% 100%;
+height: auto;
+min-height: 400px;
+position: relative;
+
+
+}
+
+main .projects-showcase .project-item .caption{
+
+
+text-align: center;
+height:auto;
+width:auto;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+display: none;
+
+
+}
+
+main .projects-showcase .project-item a{
+
+  position: relative;
+  top:0.5rem;
+  text-decoration: none;
+  color:white;
+  font-family: helvetica;
+  font-weight: 800;
+
+}
+
+main .projects-showcase .project-item a:hover{text-decoration: underline;}
+
+
+main .projects-showcase .project-item h2{
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding:2rem;
+  color:white;
+
+}
+
+main .projects-showcase .project-item .fa{
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 3rem;
+
+}
+
+main .projects-showcase .project-item:hover .darkener{
+
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.5s ease;
+
+}
+
+main .projects-showcase .project-item:hover .caption{
+
+  display: block;
+  transition: 0.5s ease;
+
+}
+
+main .projects-showcase .project-item .darkener{
+
+  height:100%;
+  width:100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.0);
+
+}

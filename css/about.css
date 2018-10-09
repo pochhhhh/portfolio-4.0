@@ -1,0 +1,74 @@
+#about{
+
+  height:100vh;
+  width:100%;
+  background:#F9F9F9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:1rem;
+  padding:2rem;
+
+}
+
+#about .section-a, .section-b{
+
+width:100%;
+
+}
+
+#about .section-b{background: none;}
+
+#about .section-b .skills{
+
+  height:auto;
+  background: none;
+  width:100%;
+  position: relative;
+  top:2rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap:3px;
+
+}
+
+#about .section-b .bio{
+
+height:auto;
+background: none;
+position: relative;
+top:15%;
+padding:1.8rem;
+
+}
+
+#about .section-b .skills .skill-listing{background: none; height:auto;}
+
+#about .section-a img{
+
+height:100%;
+width:100%;
+
+}
+
+
+
+}
+
+
+#about .section-b .skills{
+
+  height:100px;
+  width:100px;
+  background: orange !important;
+  position: relative;
+  top:100px;
+
+}
+
+#about .section-b .skills ul{
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}

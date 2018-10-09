@@ -19,7 +19,7 @@ grid-template-columns: 1fr 1fr;
 main .header-showcase .caption{
 
 position: relative;
-top:40%;
+top:35%;
 
 }
 
@@ -44,6 +44,7 @@ main .projects-showcase{
 height:auto;
 width:100%;
 background: #F9F9F9 !important;
+margin-bottom: 5vh;
 
 
 }

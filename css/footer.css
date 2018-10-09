@@ -2,7 +2,8 @@ footer{
 
 background: black !important;
 height:100px;
-margin-top:5vh;
+width:100%;
+position: relative;
 
 }
 
@@ -15,7 +16,7 @@ footer .social-media-panel{
 
 }
 
-footer .social-media-panel .fa{
+footer .social-media-panel .fab{
 
 position: relative;
 top:2rem;

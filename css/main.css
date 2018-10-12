@@ -9,6 +9,14 @@ body{
 
 margin: 0;
 padding: 0;
-background: #F9F9F9 !important;
+background: blue !important;
+height:100%;
+
+
+}
+
+:root{
+
+  --main-font: 'Comfortaa', cursive;
 
 }

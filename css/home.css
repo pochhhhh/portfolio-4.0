@@ -4,8 +4,6 @@ main{
   margin-right:5vw;
   height:auto;
 
-
-
 }
 
 main .header-showcase{
@@ -21,21 +19,23 @@ main .header-showcase{
 main .header-showcase .caption{
 
   position: relative;
-  top:35%;
+  top:25%;
+  margin-left:5vw;
+  margin-right:5vw;
+  font-family: var(--main-font);
 
 }
 
-main .header-showcase .section-a h1{
-
-
-
-
-}
+main .header-showcase .section-a h1{font-weight: 800;}
 
 main .header-showcase .section-a p{
 
+
   position: relative;
   top:1.5rem;
+  font-size: 1.3rem;
+  font-family: var(--little-font);
+
 
 }
 
@@ -47,6 +47,7 @@ main .projects-showcase{
   width:100%;
   background: #F9F9F9 !important;
   margin-bottom: 5vh;
+  position: relative;
 
 
 }
@@ -56,7 +57,7 @@ main .projects-showcase .container{
 
   height:auto;
   width:100%;
-  background: yellow;
+  background: #F9F9F9;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -67,20 +68,24 @@ main .projects-showcase .container{
 
 main .projects-showcase .container .project-item{
 
+
   height:40vh;
   width:100%;
   background: none;
   background-size:100% 100%;
   position: relative;
 
+
 }
 
 main .projects-showcase .container .project-item .darkener{
+
 
   position: absolute;
   height:100%;
   width:100%;
   background: rgba(0, 0, 0, 0.0);
+
 
 }
 
@@ -91,18 +96,21 @@ main .projects-showcase .container .project-item:hover .darkener{
 
 }
 
-main .projects-showcase .container .project-item h1, i{
+main .projects-showcase .container .project-item h1{font-family: var(--little-font);}
+
+main .projects-showcase .container .project-item h1, .project-item i{
+
 
   position: absolute;
   bottom: 0;
   padding:0.8rem;
   color:white;
   text-shadow: 1px 2px black;
-  font-family: var(--main-font);
+
 
  }
 
- main .projects-showcase .container .project-item h1{font-size: 2rem;}
+main .projects-showcase .container .project-item h1{font-size: 2rem;}
 
 main .projects-showcase .container .project-item i{right:0;}
 
@@ -115,20 +123,8 @@ main .projects-showcase .container .project-item i:hover{
 
 
 
-
-
-
-
-
-}
-
-
-
-
-
-
-
 @media(max-width:992px){
+
 
   main .header-showcase{
 
@@ -147,9 +143,21 @@ main .projects-showcase .container .project-item i:hover{
 
 main .projects-showcase .container{grid-template-columns: 1fr;}
 
-main .header-showcase {grid-template-columns: 1fr; text-align: center;}
+main .header-showcase {
 
-main .projects-showcase .container .project-item h1, i{font-size: 1.4rem;}
+  grid-template-columns: 1fr;
+  text-align: center;
+
+}
+
+main .header-showcase .section-a{
+
+  position: relative;
+  top:-50px;
+
+}
+
+main .projects-showcase .container .project-item h1{font-size: 1.4rem;}
 
 
 

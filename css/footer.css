@@ -1,13 +1,16 @@
 footer{
 
-background: black !important;
-height:100px;
-width:100%;
-position: relative;
+
+  background: black !important;
+  height:100px;
+  width:100%;
+  position: relative;
+
 
 }
 
 footer .social-media-panel{
+
 
   margin: 0 auto;
   height:100%;
@@ -15,22 +18,30 @@ footer .social-media-panel{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
+
 }
 
 footer .social-media-panel .fab{
 
-position: relative;
-top:2rem;
-margin: 0 auto !important;
-color:white;
 
+  position: relative;
+  top:2rem;
+  margin: 0 auto !important;
+  color:white;
 
 
 }
 
 footer .social-media-panel a:hover .fa{
 
-transition: 0.5s ease;
-color:grey;s
+  transition: 0.5s ease;
+  color:grey;s
+
+}
+
+@media(max-width:600px){
+
+
+
 
 }

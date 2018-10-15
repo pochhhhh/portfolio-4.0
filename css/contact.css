@@ -1,4 +1,5 @@
 #contact{
+
   background: #F9F9F9 !important;
   height: auto;
   width:100%;
@@ -7,21 +8,21 @@
 
 #contact .showcase{
 
-width:100%;
-height:70%;
-background: none;
-padding:2.5rem;
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-gap:3px;
+  width:100%;
+  height:70%;
+  background: none;
+  padding:2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:3px;
 
 }
 
 #contact .showcase .section-a, .section-b{
 
-height:50vh;
-width:100%;
-background: none;
+  height:50vh;
+  width:100%;
+  background: none;
 
 }
 
@@ -33,24 +34,37 @@ background: none;
 
 }
 
-#contact .contact-details{
+#contact .showcase .section-a  h1{font-family: var(--main-font); font-weight: 800;}
 
-height:10vh;
-width:100%;
-background: none;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-gap:3px;
+#contact .showcase .section-a p{
+
+font-family: var(--little-font);
+font-size: 1.3rem;
 position: relative;
-top:5%;
+top:1.1rem;
 
 }
+
+#contact .contact-details{
+
+  height:10vh;
+  width:100%;
+  background: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:3px;
+  position: relative;
+  top:5%;
+  font-family: var(--little-font);
+
+
+}
+
 
 #contact .contact-details div{
 
   height:auto;
   width:70%;
-
   margin: 0 auto;
 
 }
@@ -60,5 +74,29 @@ top:5%;
   width: 100%;
   height:55vh;
   background: none;
+
+}
+
+@media(max-width: 600px){
+
+#contact .showcase{grid-template-columns: 1fr;}
+
+#contact .showcase .section-a h1{text-align: center;}
+
+#contact .showcase .section-a p{
+
+  position: relative;
+  top:4rem;
+
+}
+
+#contact .contact-details{
+
+grid-template-columns: 1fr;
+text-align: center;
+position: relative;
+top:-30vh;
+
+}
 
 }

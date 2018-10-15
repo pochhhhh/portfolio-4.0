@@ -1,6 +1,6 @@
 #about{
 
-  height:100vh;
+  height:auto;
   width:100%;
   background:#F9F9F9;
   display: grid;
@@ -12,7 +12,8 @@
 
 #about .section-a, .section-b{
 
-width:100%;
+  width:100%;
+  height:100vh;
 
 }
 
@@ -20,11 +21,11 @@ width:100%;
 
 #about .section-b .skills{
 
-  height:auto;
+  height:80%;
   background: none;
   width:100%;
   position: relative;
-  top:2rem;
+  top:4rem;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -34,15 +35,30 @@ width:100%;
 
 #about .section-b .bio{
 
-height:auto;
-background: none;
-position: relative;
-top:15%;
-padding:1.8rem;
+  height:100%;
+  background: none;
+  position: relative;
+  top:10%;
+  padding:1.8rem;
+  overflow: scroll;
+  text-align: center;
 
 }
 
-#about .section-b .skills .skill-listing{background: none; height:auto;}
+#about .section-b .bio h1{font-family: var(--main-font); font-weight: 800;}
+
+#about .section-b .bio p{
+
+  font-family: var(--little-font);
+  font-size: 1.3rem;
+  position: relative;
+  top:1.1rem;
+
+}
+
+#about .section-b .bio .description{text-align: justify;}
+
+#about .section-b .skills .skill-listing{background: none;}
 
 #about .section-a img{
 
@@ -51,24 +67,36 @@ width:100%;
 
 }
 
+@media(max-width:600px){
+
+#about{
+
+  grid-template-columns: 1fr;
+  position: relative;
+  height:900px;
 
 
 }
 
+#about .section-a{height:30vh; position: relative;}
+
+#about .section-b{background: #F9F9F9; position: relative; top:-25%;}
 
 #about .section-b .skills{
 
-  height:100px;
-  width:100px;
-  background: orange !important;
+  height: 30vh;
+  background: none;
   position: relative;
-  top:100px;
+  top:20%;
+  grid-template-columns: 1fr 1fr;
+
 
 }
 
-#about .section-b .skills ul{
+#about .section-b .skills .skill-listing{background: none; height: auto;}
 
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+
+
+
 
 }

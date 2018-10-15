@@ -3,20 +3,21 @@
 @import url('footer.css');
 @import url('about.css');
 @import url('contact.css');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 
-body{
+html, body{
 
-margin: 0;
-padding: 0;
-background: blue !important;
-height:100%;
-
+  margin: 0;
+  padding: 0;
+  background: #F9F9F9 !important;
+  height: 100%;
 
 }
 
 :root{
 
   --main-font: 'Comfortaa', cursive;
+  --little-font: 'Josefin Sans', sans-serif;
 
 }

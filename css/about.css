@@ -30,8 +30,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap:3px;
+  animation-name: showSkills;
+  animation-duration: 4s;
 
 }
+
+ @keyframes showSkills{from{top:50rem;} to{top:4rem;}}
 
 #about .section-b .bio{
 
@@ -43,9 +47,30 @@
   overflow: scroll;
   text-align: center;
 
+
 }
 
-#about .section-b .bio h1{font-family: var(--main-font); font-weight: 800;}
+#about .section-b .bio h1{
+
+  font-family: var(--main-font);
+  font-weight: 800;
+  position: relative; left:0;
+  animation-name: slideLeft;
+  animation-duration: 0.7s;
+}
+
+@keyframes slideLeft{
+
+  from{
+    left:1000px;
+    }
+    to{
+      left: 0;
+    }
+
+
+}
+
 
 #about .section-b .bio p{
 
@@ -55,6 +80,15 @@
   top:1.1rem;
 
 }
+
+#about .section-b .bio .description{
+
+  animation-name: slideUp;
+  animation-duration: 2s;
+
+}
+
+@keyframes slideUp{from{top:1000px;} to{top:1.1rem;}}
 
 #about .section-b .bio .description{text-align: justify;}
 

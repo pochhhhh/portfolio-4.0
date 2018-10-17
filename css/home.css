@@ -26,19 +26,50 @@ main .header-showcase .caption{
 
 }
 
-main .header-showcase .section-a h1{font-weight: 800;}
+main .header-showcase .section-a{background: none;}
+
+main .header-showcase .section-a h1{
+
+  font-weight: 800;
+  position: relative;
+  right:0;
+  animation-name: slideIn;
+  animation-duration: 1.5s;
+  color:black;
+  font-size:2.5rem;
+
+}
+
+@keyframes slideIn{
+  from{
+    right: 1000px;
+  }
+  to{
+    right:0px;
+  }
+}
 
 main .header-showcase .section-a p{
 
 
   position: relative;
-  top:1.5rem;
+  top:1.8rem;
   font-size: 1.3rem;
   font-family: var(--little-font);
+  animation-name: slideUp;
+  animation-duration: 3s;
 
 
 }
 
+@keyframes slideUp{
+  from{
+    top: 1000px;
+  }
+  to{
+    top: 1.8rem;
+  }
+}
 
 main .projects-showcase{
 
@@ -96,7 +127,17 @@ main .projects-showcase .container .project-item:hover .darkener{
 
 }
 
-main .projects-showcase .container .project-item h1{font-family: var(--little-font);}
+main .projects-showcase .container .project-item h1{
+
+  font-family: var(--little-font);
+  opacity: 1;
+  animation-name:fadeIn;
+  animation-duration: 4s;
+
+}
+
+@keyframes fadeIn{from{opacity: 0;} to{opacity: 1;}}
+
 
 main .projects-showcase .container .project-item h1, .project-item i{
 
@@ -126,14 +167,14 @@ main .projects-showcase .container .project-item i:hover{
 @media(max-width:992px){
 
 
-  main .header-showcase{
+    main .header-showcase{
 
-    grid-template-columns: 1fr;
-    text-align: center;
+        grid-template-columns: 1fr;
+        text-align: center;
 
-  }
+      }
 
-  main .projects-showcase .container .project-item h1, i{font-size: 1rem;}
+    main .projects-showcase .container .project-item h1, i{font-size: 1rem;}
 
 
 }
@@ -141,25 +182,25 @@ main .projects-showcase .container .project-item i:hover{
 @media(max-width:600px){
 
 
-main .projects-showcase .container{grid-template-columns: 1fr;}
+    main .projects-showcase .container{grid-template-columns: 1fr;}
 
-main .header-showcase {
+    main .header-showcase .section-a h1{font-size: 2.2rem;}
 
-  grid-template-columns: 1fr;
-  text-align: center;
+    main .header-showcase {
 
-}
+      grid-template-columns: 1fr;
+      text-align: center;
 
-main .header-showcase .section-a{
+    }
 
-  position: relative;
-  top:-50px;
+    main .header-showcase .section-a{
 
-}
+      position: relative;
+      top:-50px;
 
-main .projects-showcase .container .project-item h1{font-size: 1.4rem;}
+    }
 
-
+    main .projects-showcase .container .project-item h1{font-size: 1.4rem;}
 
 
 

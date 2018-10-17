@@ -88,14 +88,18 @@ main .projects-showcase .container{
 
   height:auto;
   width:100%;
-  background: #F9F9F9;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap:1.5rem;
+  animation-name: showProjects;
+  animation-duration: 5s;
+  position: relative;
 
 
 }
+
+@keyframes showProjects{from{top:100vh;} to{top:0;}}
 
 main .projects-showcase .container .project-item{
 

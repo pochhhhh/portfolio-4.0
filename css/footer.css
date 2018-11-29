@@ -45,3 +45,34 @@ footer .social-media-panel a:hover .fa{
 
 
 }
+
+
+/* iphone 5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) { }
+
+/* iphone 6, 6s, 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+
+  footer{
+
+    height: 200px;
+
+
+  }
+
+  footer .social-media-panel i{
+
+    font-size: 5.5rem;
+    top:3rem !important;
+    position: relative;
+
+  }
+
+
+ }
+
+/* iphone 6+, 6s+, 7+, 8+ */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) { }
+
+/* iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { }

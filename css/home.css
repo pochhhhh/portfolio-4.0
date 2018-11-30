@@ -52,23 +52,21 @@ main .header-showcase .section-a h1{
 
 main .header-showcase .section-a p{
 
-
   position: relative;
-  top:1.8rem;
+  top:2.4rem;
   font-size: 1.3rem;
   font-family: var(--little-font);
-  animation-name: slideUp;
+  animation-name: showcaseSlide;
   animation-duration: 2.8s;
-
 
 }
 
-@keyframes slideUp{
+@keyframes showcaseSlide{
   from{
     top: 1000px;
   }
   to{
-    top: 1.8rem;
+    top: 2.4rem;
   }
 }
 
@@ -94,7 +92,7 @@ main .projects-showcase .container{
   grid-template-columns: repeat(3, 1fr);
   grid-gap:1.5rem;
   animation-name: showProjects;
-  animation-duration: 5s;
+  animation-duration: 2.4s;
   position: relative;
 
 
@@ -264,12 +262,15 @@ main .projects-showcase .container .project-item i:hover{
 
   main .projects-showcase .container .project-item h1{
 
+
     left:20px;
     font-size: 4.6rem;
+    
 
   }
 
   main .projects-showcase .container .project-item i{
+
 
     bottom:40px;
     right:20px;

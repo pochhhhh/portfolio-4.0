@@ -31,8 +31,13 @@
   position: relative;
   top:20%;
   padding:2.5rem;
+  animation-name: slideRight;
+  animation-duration: 1.5s;
+
 
 }
+
+@keyframes slideRight{from{left:1000px;} to{left:0;}}
 
 #contact .showcase .section-a  h1{font-family: var(--main-font); font-weight: 800;}
 
@@ -66,7 +71,37 @@ top:1.1rem;
   height:auto;
   width:70%;
   margin: 0 auto;
+  position: relative;
 
+
+}
+
+@keyframes slideUp{
+
+  from{top:500px;}
+  to{top:0;}
+
+}
+
+#contact .contact-details .item-1{
+
+  animation-name: slideUp;
+  animation-duration: 1s;
+
+}
+
+#contact .contact-details .item-2{
+
+  animation-name: slideUp;
+  animation-duration: 1.25s;
+  
+}
+
+#contact .contact-details .item-3{
+
+  animation-name: slideUp;
+  animation-duration: 1.5s;
+  
 }
 
 #contact .map-api{

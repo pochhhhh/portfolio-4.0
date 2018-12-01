@@ -94,14 +94,14 @@ top:1.1rem;
 
   animation-name: slideUp;
   animation-duration: 1.25s;
-  
+
 }
 
 #contact .contact-details .item-3{
 
   animation-name: slideUp;
   animation-duration: 1.5s;
-  
+
 }
 
 #contact .map-api{
@@ -127,10 +127,10 @@ top:1.1rem;
 
 #contact .contact-details{
 
-grid-template-columns: 1fr;
-text-align: center;
-position: relative;
-top:-30vh;
+  grid-template-columns: 1fr;
+  text-align: center;
+  position: relative;
+  top:-30vh;
 
 }
 

@@ -1,0 +1,43 @@
+.blog-listing{
+
+  height: auto;
+  animation-name: blogSlideIn;
+  animation-duration: 3.2s;
+  position: relative;
+  padding:40px;
+
+
+}
+
+@keyframes blogSlideIn {
+
+  from{
+    top:1000px;
+
+  }
+  to{
+
+    top:0;
+
+  }
+
+
+}
+
+.blog-listing ul{
+
+  list-style: none;
+
+}
+
+.blog-listing h3{
+
+  font-family: var(--main-font);
+
+}
+
+.blog-listing p{
+
+  font-family: var(--little-font);
+
+}

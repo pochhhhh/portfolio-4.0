@@ -13,6 +13,21 @@
 
 }
 
+#navbar .navbar-brand{
+
+  height:150px;
+  width:250px;
+
+}
+
+#navbar .navbar-brand img{
+
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+
+}
+
 #navbar .navbar-brand:hover{
 
   color:grey;

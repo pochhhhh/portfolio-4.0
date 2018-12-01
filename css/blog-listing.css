@@ -9,6 +9,14 @@
 
 }
 
+.blog-post{
+
+  height: auto;
+  padding:40px;
+
+
+}
+
 @keyframes blogSlideIn {
 
   from{

@@ -29,6 +29,34 @@ main .header-showcase .caption{
 
 main .header-showcase .section-a{background: none;}
 
+main .header-showcase .section-b{background: none;}
+
+main .header-showcase .section-b .image{
+
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+main .header-showcase .section-b .image img{
+
+  height: 100%;
+  width: 100%;
+  padding: 2%;
+  position: relative;
+  animation-name: blogImageSlideIn;
+  animation-duration: 1.5s;
+
+}
+
+@keyframes blogImageSlideIn {
+
+  from{left:500px;}
+  to{left:0;}
+
+}
+
 main .header-showcase .section-a h1{
 
   font-weight: 800;
@@ -265,7 +293,7 @@ main .projects-showcase .container .project-item i:hover{
 
     left:20px;
     font-size: 4.6rem;
-    
+
 
   }
 

@@ -30,7 +30,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap:3px;
-  animation-name: showSkills;
   animation-duration: 1.8s;
 
 }
@@ -100,7 +99,7 @@
 
 @keyframes descriptionSlide{
 
-  from{top:1000px;} 
+  from{top:1000px;}
   to{top:50px;}
 
 }
@@ -120,6 +119,18 @@ animation-duration: 1.5s;
 }
 
 @keyframes slideToRight{from{right:1000px;} to{right:0;}}
+
+@media(min-width:768px){
+
+  #about .section-b .skills{
+
+    position: relative;
+
+
+  }
+
+
+}
 
 @media(max-width:600px){
 
@@ -162,11 +173,95 @@ animation-duration: 1.5s;
 
 }
 
-/* iphone 5 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) { }
+@media(max-width: 375px){
 
-/* iphone 6, 6s, 7, 8 */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+
+    #about{
+
+      grid-template-columns: 1fr;
+
+
+    }
+
+    #about .section-a, .section-b{
+
+      height: 40vh;
+
+    }
+
+    #about .section-b{
+
+      height: 80vh;
+
+    }
+
+    #about .section-b .skills{
+
+      height:0;
+      top:-35%;
+      animation-duration: 2s;
+
+    }
+
+    #about .section-b .skills i{
+
+      font-size: 8rem;
+
+
+    }
+
+     @keyframes showSkills{from{top:20rem;} to{top:4rem;}}
+
+      #about .section-b{
+
+        height: 100vh;
+
+
+      }
+
+     #about .section-b .bio .name{
+
+       font-size: 2rem;
+
+     }
+
+     #about .section-b .bio h1{
+
+       top:-1.5rem;
+
+     }
+
+     #about .section-b .bio .description{
+
+       font-size: 1.3rem;
+       top:0.5rem;
+
+     }
+
+     #about .section-b .skills {
+
+
+
+
+     }
+
+
+
+     #about .section-b .skills i{
+
+      font-size: 2.5rem;
+
+     }
+
+
+
+
+
+
+
+}
+
+@media(min-width: 375px){
 
 
   #about{
@@ -191,7 +286,7 @@ animation-duration: 1.5s;
   #about .section-b .skills{
 
     height:0;
-    top:-35%;
+    top:-10%;
     animation-duration: 2s;
 
   }
@@ -205,31 +300,82 @@ animation-duration: 1.5s;
 
    @keyframes showSkills{from{top:20rem;} to{top:4rem;}}
 
+    #about .section-b{
+
+      height: 100vh;
+
+
+    }
+
    #about .section-b .bio .name{
 
-     font-size: 4rem;
+     font-size: 2rem;
 
    }
 
    #about .section-b .bio h1{
 
-     top:-1rem;
+     top:-1.5rem;
 
    }
 
    #about .section-b .bio .description{
 
-     font-size: 3rem;
+     font-size: 1.2rem;
      top:0.5rem;
+
+   }
+
+   #about .section-b .skills {
+
+
+
 
    }
 
 
 
+   #about .section-b .skills i{
+
+    font-size: 2.5rem;
+
+   }
+
+
+
+
  }
 
-/* iphone 6+, 6s+, 7+, 8+ */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) { }
 
-/* iphone X */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { }
+@media(min-width:768px){
+
+  #about .section-b .skills i{
+
+   font-size: 4.5rem;
+
+  }
+
+
+
+
+}
+
+@media(min-width:1200px){
+
+  #about .section-b .bio .description{
+
+    font-size: 2rem;
+    top:0.5rem;
+
+  }
+
+  #about .section-b .skills{
+
+    height:0;
+    top:-35%;
+    animation-duration: 2s;
+
+  }
+
+
+}

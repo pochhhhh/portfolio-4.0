@@ -65,7 +65,7 @@ main .header-showcase .section-a h1{
   animation-name: slideIn;
   animation-duration: 1.5s;
   color:black;
-  font-size:2.5rem;
+  font-size: 2.5rem;
 
 }
 
@@ -117,7 +117,7 @@ main .projects-showcase .container{
   width:100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-gap:1.5rem;
   animation-name: showProjects;
   animation-duration: 2.4s;
@@ -125,6 +125,48 @@ main .projects-showcase .container{
 
 
 }
+
+.project-item-1{
+
+  grid-column-start: 1;
+  grid-column-end: 7;
+
+}
+
+.project-item-2{
+
+  grid-column-start: 1;
+  grid-column-end: 7;
+
+
+}
+
+.project-item-3{
+
+  grid-column-start: 1;
+  grid-column-end: 7;
+
+
+
+}
+
+.project-item-4{
+
+  grid-column-start: 1;
+  grid-column-end: 7;
+
+
+
+}
+
+.project-item-5{
+
+  grid-column-start: 1;
+  grid-column-end: 7;
+
+}
+
+
 
 @keyframes showProjects{from{top:100vh;} to{top:0;}}
 
@@ -139,6 +181,7 @@ main .projects-showcase .container .project-item{
 
 
 }
+
 
 main .projects-showcase .container .project-item .darkener{
 
@@ -232,47 +275,24 @@ main .projects-showcase .container .project-item i:hover{
 @media(max-width:600px){
 
 
-    main .projects-showcase .container{grid-template-columns: 1fr;}
 
-    main .header-showcase .section-a h1{font-size: 2.2rem;}
-
-    main .header-showcase {
-
-      grid-template-columns: 1fr;
-      text-align: center;
-
-    }
-
-    main .header-showcase .section-a{
-
-      position: relative;
-      top:-50px;
-
-    }
-
-    main .projects-showcase .container .project-item h1{font-size: 1.4rem;}
 
 
 
 }
 
 
-
-/* iphone 5 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) { }
-
-/* iphone 6, 6s, 7, 8 */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+@media(min-width:320px){
 
   main .header-showcase .section-a h1{
 
-    font-size: 5.5rem;
+    font-size: 2.5rem;
 
   }
 
   main .header-showcase .section-a p{
 
-    font-size: 4rem;
+    font-size: 1.5rem;
 
   }
 
@@ -284,7 +304,8 @@ main .projects-showcase .container .project-item i:hover{
 
   main .projects-showcase .container .project-item h1, .project-item i{
 
-    font-size: 8rem;
+    font-size: 4rem;
+
 
   }
 
@@ -292,7 +313,7 @@ main .projects-showcase .container .project-item i:hover{
 
 
     left:20px;
-    font-size: 4.6rem;
+    font-size: 2.6rem;
 
 
   }
@@ -300,8 +321,8 @@ main .projects-showcase .container .project-item i:hover{
   main .projects-showcase .container .project-item i{
 
 
-    bottom:40px;
-    right:20px;
+    bottom:1rem;
+    right:0.5rem;
 
 
   }
@@ -310,8 +331,127 @@ main .projects-showcase .container .project-item i:hover{
 
  }
 
-/* iphone 6+, 6s+, 7+, 8+ */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) { }
+@media(min-width: 768px){
 
-/* iphone X */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { }
+
+
+  main .header-showcase .section-a h1{
+
+    font-size: 2.5rem;
+    color:navy;
+
+  }
+
+  main .header-showcase .section-a p{
+
+    font-size: 2rem;
+
+  }
+
+  main .projects-showcase .container{
+
+    grid-template-columns: 1fr;
+
+  }
+
+  main .projects-showcase .container .project-item{
+
+    height: 70vh;
+
+
+  }
+
+  main .projects-showcase .container .project-item h1, .project-item i{
+
+    font-size: 4rem;
+
+  }
+
+  main .projects-showcase .container .project-item h1{
+
+
+    left:20px;
+    font-size: 1.7rem;
+
+
+  }
+
+
+
+}
+
+@media(min-width: 1200px){
+
+  main .projects-showcase .container{
+
+    grid-template-columns: repeat(6, 1fr);
+
+
+  }
+
+  .project-item-1{
+
+    height: 55vh !important;
+
+  }
+
+  .project-item-1, .project-item-2{
+
+    height: 55vh !important;
+
+
+  }
+
+  .project-item-3, .project-item-4, .project-item-5{
+
+
+    height: 40vh !important;
+
+
+  }
+
+  .project-item-1{
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+
+  }
+
+  .project-item-2{
+
+    grid-column-start: 4;
+    grid-column-end: 7;
+
+
+  }
+
+  .project-item-3{
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+
+
+  }
+
+  .project-item-4{
+
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+
+
+  }
+
+  .project-item-5{
+
+    grid-column-start: 5;
+    grid-column-end: 7;
+
+
+  }
+
+
+
+}

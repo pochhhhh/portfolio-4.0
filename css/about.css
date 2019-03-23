@@ -10,12 +10,25 @@
 
 }
 
+#about .section-a{
+
+  height: 50vh !important;
+  width: 50vw !important;
+  margin: 0 auto !important;
+
+
+}
+
 #about .section-a, .section-b{
 
   width:100%;
-  height:100vh;
 
 }
+
+#about .section-a img{
+  width: 100%;
+}
+
 
 #about .section-b{background: none;}
 
@@ -92,7 +105,7 @@
 
   position: relative;
   top:50px;
-  animation-name: descriptionSlide;
+  /*animation-name: descriptionSlide;*/
   animation-duration: 1.8s;
 
 }
@@ -143,7 +156,14 @@ animation-duration: 1.5s;
 
 }
 
-#about .section-a{height:30vh; position: relative;}
+#about .section-a{
+
+  height:30vh;
+  position: relative;
+  margin: none !important;
+
+
+}
 
 #about .section-b{
 
@@ -173,13 +193,18 @@ animation-duration: 1.5s;
 
 }
 
-@media(max-width: 375px){
-
+@media(max-width: 320px){
 
     #about{
 
       grid-template-columns: 1fr;
+      margin-bottom: 50vh;
 
+    }
+
+    #about .section-a{
+
+      margin-bottom:20vh;
 
     }
 
@@ -198,15 +223,16 @@ animation-duration: 1.5s;
     #about .section-b .skills{
 
       height:0;
-      top:-35%;
+      top:10%;
       animation-duration: 2s;
+      margin-bottom: 10vh;
+      background: yellow !important;
 
     }
 
     #about .section-b .skills i{
 
-      font-size: 8rem;
-
+      font-size: 3rem !important;
 
     }
 
@@ -238,25 +264,12 @@ animation-duration: 1.5s;
 
      }
 
-     #about .section-b .skills {
+     .social-media-panel i{
 
-
-
-
-     }
-
-
-
-     #about .section-b .skills i{
-
-      font-size: 2.5rem;
+       font-size: 3rem !important;
+       margin: 0.5rem;
 
      }
-
-
-
-
-
 
 
 }
@@ -267,33 +280,43 @@ animation-duration: 1.5s;
   #about{
 
     grid-template-columns: 1fr;
+    margin-bottom: 80vh;
 
 
   }
 
-  #about .section-a, .section-b{
+  .social-media-panel i{
 
-    height: 40vh;
+    font-size: 3rem !important;
 
   }
+
+  #about .section-a{
+
+    height: 80vh;
+
+  }
+
+
 
   #about .section-b{
 
-    height: 80vh;
+    height: 30vh;
+    top:5%;
 
   }
 
   #about .section-b .skills{
 
     height:0;
-    top:-10%;
     animation-duration: 2s;
+    top:-10%;
 
   }
 
   #about .section-b .skills i{
 
-    font-size: 8rem;
+    font-size: 4rem !important;
 
 
   }
@@ -355,12 +378,26 @@ animation-duration: 1.5s;
 
   }
 
+  #about .section-b .bio .description{
+
+    font-size: 1.8rem;
+    top:0.5rem;
+
+  }
+
 
 
 
 }
 
 @media(min-width:1200px){
+
+  #about{
+
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+
+  }
 
   #about .section-b .bio .description{
 
@@ -374,6 +411,12 @@ animation-duration: 1.5s;
     height:0;
     top:-35%;
     animation-duration: 2s;
+
+  }
+
+  .social-media-panel i{
+
+    font-size: 5rem !important;
 
   }
 

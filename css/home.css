@@ -27,6 +27,7 @@ main .header-showcase .caption{
 
 }
 
+
 main .header-showcase .section-a{background: none;}
 
 main .header-showcase .section-b{background: none;}
@@ -62,10 +63,10 @@ main .header-showcase .section-a h1{
   font-weight: 800;
   position: relative;
   right:0;
-  animation-name: slideIn;
-  animation-duration: 1.5s;
-  color:black;
+  /*animation-name: slideIn;*/
+  /*animation-duration: 1.5s;*/
   font-size: 2.5rem;
+  color:navy;
 
 }
 
@@ -84,8 +85,8 @@ main .header-showcase .section-a p{
   top:2.4rem;
   font-size: 1.3rem;
   font-family: var(--little-font);
-  animation-name: showcaseSlide;
-  animation-duration: 2.8s;
+  /*animation-name: showcaseSlide;
+  animation-duration: 2.8s;*/
 
 }
 
@@ -338,7 +339,7 @@ main .projects-showcase .container .project-item i:hover{
   main .header-showcase .section-a h1{
 
     font-size: 2.5rem;
-    color:navy;
+
 
   }
 

@@ -405,7 +405,7 @@ animation-duration: 1.5s;
   #about{
 
     grid-template-columns: 1fr;
-    margin-bottom: 0;
+    margin-bottom: 40vh;
 
   }
 
@@ -419,7 +419,7 @@ animation-duration: 1.5s;
   #about .section-b .skills{
 
     height:0;
-    top:-35%;
+    top:-10%;
     animation-duration: 2s;
 
   }

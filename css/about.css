@@ -13,7 +13,7 @@
 #about .section-a{
 
   height: 50vh !important;
-  width: 50vw !important;
+  width: 30vw !important;
   margin: 0 auto !important;
 
 
@@ -27,6 +27,7 @@
 
 #about .section-a img{
   width: 100%;
+  border-radius: 50%;
 }
 
 
@@ -193,7 +194,7 @@ animation-duration: 1.5s;
 
 }
 
-@media(max-width: 320px){
+@media(max-width: 375px){
 
     #about{
 
@@ -205,6 +206,7 @@ animation-duration: 1.5s;
     #about .section-a{
 
       margin-bottom:20vh;
+      width: 60vw !important;
 
     }
 
@@ -214,16 +216,10 @@ animation-duration: 1.5s;
 
     }
 
-    #about .section-b{
-
-      height: 80vh;
-
-    }
-
     #about .section-b .skills{
 
       height:0;
-      top:10%;
+      top:5%;
       animation-duration: 2s;
       margin-bottom: 10vh;
       background: yellow !important;
@@ -271,10 +267,17 @@ animation-duration: 1.5s;
 
      }
 
+     #about .skills{
+
+       position: relative;
+       top:5vh !important;
+
+     }
+
 
 }
 
-@media(min-width: 375px){
+@media(max-width: 425px){
 
 
   #about{
@@ -294,9 +297,9 @@ animation-duration: 1.5s;
   #about .section-a{
 
     height: 80vh;
+    width: 60vw !important;
 
   }
-
 
 
   #about .section-b{
@@ -371,6 +374,13 @@ animation-duration: 1.5s;
 
 
 @media(min-width:768px){
+
+  #about{
+
+    margin-bottom: 60vh;
+
+
+  }
 
   #about .section-b .skills i{
 
